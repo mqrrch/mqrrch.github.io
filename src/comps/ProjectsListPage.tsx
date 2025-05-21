@@ -20,13 +20,22 @@ const projects = [
         ghLink: 'https://github.com/mqrrch/E-Commerce-Store'
     },
     {
-        name: 'Weather App',
-        img: '/Weather-App.png',
-        alt:'Weather App Image',
-        text: `A real-time weather application that checks the weather in every city in the world. Features a city search, weather condition, wind speed and direction, UV index, humidity percentage, and astrology. Powered with <a class='font-semibold text-[#f8f8f8]' target="_blank" href='https://www.weatherapi.com/'>WeatherAPI</a>.`,
-        tools: ['Javascript', 'Tailwind', 'React'],
-        webLink: 'https://mqrrch.github.io/Weather-App',
-        ghLink: 'https://github.com/mqrrch/Weather-App'
+        name: 'Countries List',
+        img: '/Countries-List.png',
+        alt:'Countries List Image',
+        text: `A list of countries with search country, filter by region, and dark or light mode.`,
+        tools: ['Typescript', 'Tailwind', 'React', 'Redux'],
+        webLink: 'https://mqrrch.github.io/Countries-List',
+        ghLink: 'https://github.com/mqrrch/Countries-List'
+    },
+    {
+        name: 'Character Counter',
+        img: '/Character-Counter.png',
+        alt:'Character Counter Image',
+        text: `A characters, words, and sentences counter of a text. Features a dark or light mode, excluding space from the counter, and letter density.`,
+        tools: ['Typescript', 'Tailwind', 'React'],
+        webLink: 'https://mqrrch.github.io/Character-Counter',
+        ghLink: 'https://github.com/mqrrch/Character-Counter'
     },
 ]
 
@@ -63,7 +72,7 @@ export default function ProjectsListPage(){
                                 </div>
                             </div>
                             <div className="w-40 h-30 sm:order-first sm:w-full sm:max-w-[140px] border-2 border-[#4a4a4a] rounded mt-3 sm:mt-0 overflow-hidden">
-                                <img src={project.img} className="w-full h-auto rounded"></img>
+                                <img src={project.img} className="w-full h-full rounded"></img>
                             </div>
                         </div>
                     </div>

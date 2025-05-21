@@ -53,7 +53,7 @@ export default function ContactPage(){
                 onSubmit={(e) => handleSubmit(e)}
             >
                 <input 
-                    className="outline-none border-2 border-[#3f4a5b] pl-2 py-1 rounded text-[#f8f8f8] text-sm" 
+                    className="outline-none border-2 border-[rgba(159,158,158,0.2)] pl-2 py-1 rounded text-[#f8f8f8] text-sm" 
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.currentTarget.value)}
                     value={email}
                     placeholder="Email Address"
@@ -64,7 +64,7 @@ export default function ContactPage(){
                     required
                 ></input>
                 <textarea
-                    className="outline-none border-2 border-[#3f4a5b] pl-2 py-1 rounded text-[#f8f8f8] text-sm"
+                    className="outline-none border-2 border-[rgba(159,158,158,0.2)] pl-2 py-1 rounded text-[#f8f8f8] text-sm resize-none"
                     onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.currentTarget.value)}
                     value={message}
                     placeholder="Message"
